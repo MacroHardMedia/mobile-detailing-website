@@ -2,11 +2,16 @@ import React from "react";
 import Card from "../ui/Card";
 import "./services.scss";
 
+// Import images
+import exteriorDetailImg from "../../assets/exterior-detail.png";
+import interiorDetailImg from "../../assets/interior-detail.png";
+import headlightRestorationImg from "../../assets/headlight-restoration.png";
+
 const Services = () => {
   const servicesData = [
     {
       id: 1,
-      image: "src/assets/exterior-detail.png",
+      image: exteriorDetailImg,
       imageAlt: "Professional exterior car detailing service",
       header: "Exterior Detailing",
       description:
@@ -14,7 +19,7 @@ const Services = () => {
     },
     {
       id: 2,
-      image: "src/assets/interior-detail.png",
+      image: interiorDetailImg,
       imageAlt: "Professional interior car detailing service",
       header: "Interior Detailing",
       description:
@@ -22,7 +27,7 @@ const Services = () => {
     },
     {
       id: 3,
-      image: "src/assets/headlight-restoration.png",
+      image: headlightRestorationImg,
       imageAlt: "Professional headlight restoration service",
       header: "Headlight Restoration",
       description:

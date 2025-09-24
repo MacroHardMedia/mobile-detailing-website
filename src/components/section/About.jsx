@@ -1,4 +1,5 @@
 import "./about.scss";
+import aboutImg from "../../assets/about-img.png";
 
 function About() {
   return (
@@ -6,10 +7,7 @@ function About() {
       <div className="container">
         <div className="about__content">
           <div className="about__image">
-            <img
-              src="../../src/assets/about-img.png"
-              alt="Elite Mobile Detailing Team"
-            />
+            <img src={aboutImg} alt="Elite Mobile Detailing Team" />
           </div>
 
           <div className="about__text">

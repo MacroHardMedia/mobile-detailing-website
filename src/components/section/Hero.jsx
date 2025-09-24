@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./hero.scss";
+import heroBgVideo from "../../assets/hero-bg.mov";
 
 function Hero() {
   const [email, setEmail] = useState("");
@@ -22,7 +23,7 @@ function Hero() {
           playsInline
           poster="/path/to/poster-image.jpg" // Optional fallback image
         >
-          <source src="../../src/assets/hero-bg.mov" type="video/mp4" />
+          <source src={heroBgVideo} type="video/mp4" />
           <source src="/videos/hero-background.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
