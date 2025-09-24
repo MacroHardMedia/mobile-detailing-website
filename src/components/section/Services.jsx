@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../ui/Card";
 import "./services.scss";
+import { useSEO } from "../../hooks/useSEO";
 
 // Import images
 import exteriorDetailImg from "../../assets/exterior-detail.png";
@@ -8,6 +9,16 @@ import interiorDetailImg from "../../assets/interior-detail.png";
 import headlightRestorationImg from "../../assets/headlight-restoration.png";
 
 const Services = () => {
+  // SEO optimization for Services page
+  useSEO({
+    title:
+      "Mobile Car Detailing Services - Elite Detailing | Interior & Exterior",
+    description:
+      "Professional mobile car detailing services including interior cleaning, exterior detailing, and headlight restoration. Expert car care at your location.",
+    keywords:
+      "mobile car detailing, interior cleaning, exterior detailing, headlight restoration, auto detailing services, car wash, professional car care",
+  });
+
   const servicesData = [
     {
       id: 1,

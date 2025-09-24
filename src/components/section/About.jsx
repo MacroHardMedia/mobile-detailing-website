@@ -1,7 +1,17 @@
 import "./about.scss";
 import aboutImg from "../../assets/about-img.png";
+import { useSEO } from "../../hooks/useSEO";
 
 function About() {
+  // SEO optimization for About section
+  useSEO({
+    title: "About Elite Mobile Detailing - Professional Car Care Experts",
+    description:
+      "Learn about Elite Mobile Detailing's professional team and commitment to exceptional car care services. Trusted by car owners for expert mobile detailing.",
+    keywords:
+      "mobile detailing experts, professional car care team, auto detailing professionals, car detailing experience",
+  });
+
   return (
     <section className="about">
       <div className="container">

@@ -1,9 +1,20 @@
 import { useState } from "react";
 import "./hero.scss";
 import heroBgVideo from "../../assets/hero-bg.mov";
+import { useSEO } from "../../hooks/useSEO";
 
 function Hero() {
   const [email, setEmail] = useState("");
+
+  // SEO optimization for home page
+  useSEO({
+    title:
+      "Elite Mobile Detailing - Professional Car Care Services | We Come To You",
+    description:
+      "Professional mobile car detailing services. Expert interior cleaning, exterior detailing, and headlight restoration. Convenient service at your location.",
+    keywords:
+      "mobile car detailing, professional car care, auto detailing, car wash service, mobile detailing near me",
+  });
 
   const handleSubmit = (e) => {
     e.preventDefault();
